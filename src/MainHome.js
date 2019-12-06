@@ -82,16 +82,13 @@ class MainHome extends Component {
     }
     handleSortAsc = () => {
         let { episodeListArr } = this.state
-        console.log(episodeListArr)
         episodeListArr.sort(this.compareSortAscNumbers)
         this.setState({ episodeListArr })
-        console.log("sort", episodeListArr)
     }
     handleSortDesc = () => {
         let { episodeListArr } = this.state
         episodeListArr.sort(this.compareSortDescNumbers)
         this.setState({ episodeListArr })
-        console.log("sort", episodeListArr)
     }
     handleEnglishData = () => {
         let { engData, englishDataFlag } = this.state
@@ -115,7 +112,6 @@ class MainHome extends Component {
                 (this.setState({ episodeListArr: initialEpisodeArr, selectedFilter: filterValue }, () => this.handleSortAsc())) :
                 (this.setState({ episodeListArr: initialEpisodeArr, selectedFilter: filterValue }, () => this.handleSortDesc()))
         } else {
-            console.log("else came here", filterValue)
             filteredEpisodeListArr = initialEpisodeArr.filter((obj) => (
                 obj.season === filterValue
             ))
@@ -123,20 +119,15 @@ class MainHome extends Component {
                 (this.setState({ episodeListArr: filteredEpisodeListArr, selectedFilter: filterValue }, () => this.handleSortAsc())) :
                 (this.setState({ episodeListArr: filteredEpisodeListArr, selectedFilter: filterValue }, () => this.handleSortDesc()))
         }
-        // if (selectedSort === "Asc") { this.handleSortAsc() }
-        console.log("filtered", filteredEpisodeListArr, episodeListArr)
     }
     handleDropDownClick = (name, val) => {
         let { selectedSort, selectedLang } = this.state
-        console.log("name", name, "value ", val)
         if (name === "sort") {
             val === "Asc" ? this.handleSortAsc() : this.handleSortDesc()
         }
         else if (name === "lang" && val === "English") {
-            console.log("English Clicked")
             this.handleEnglishData()
         } else if (name === "lang" && val === "Latin") {
-            console.log("Latin Clicked")
             this.handleLatinData()
         }
         name === "sort" ? this.setState({ selectedSort: val }) : this.setState({ selectedLang: val })

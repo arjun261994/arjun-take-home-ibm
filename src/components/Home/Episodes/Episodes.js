@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import EpisodeItem from './EpisodeItem'
 import './Episodes.css'
 import DropDown from '../../DropDown/DropDown'
-// import DropDownRough from '../../DropDown/DropDownRough'
 
 export default class Episodes extends Component {
     constructor(props) {
@@ -11,9 +10,6 @@ export default class Episodes extends Component {
         this.state = {
 
         }
-    }
-    componentDidMount() {
-        console.log(this.props.episodeList)
     }
 
     render() {
@@ -39,20 +35,12 @@ export default class Episodes extends Component {
 
                     </div>
                 </div>
-                {/* <div>
-                    <DropDown key={1} dropDownOptions={dropDownOptions} handleDropDownClick={handleDropDownClick} selectedValue={selectedValue} />
-                </div> */}
                 <div className="i-episodeList-mainContainer">
                     {
                         this.props.episodeList.map((obj, index) => (
                             <EpisodeItem key={index} episodeInfo={obj} />
                         ))
                     }
-                    {/* {
-                    this.props.episodeList.map((obj, index) => (
-                        <EpisodeItem episodeInfo={episodeList[index]} />
-                    ))
-                    } */}
                 </div>
             </div>
         )

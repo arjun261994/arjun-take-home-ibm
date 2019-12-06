@@ -2,7 +2,6 @@ import React from 'react'
 import './Episodes.css'
 export default function EpisodeItem(props) {
     const { name, season, rating } = props.episodeInfo
-    console.log(props)
     return (
         <div className="i-EpisodeItem-Container">
             <div className="i-EpisodeItem-innerItem-1">

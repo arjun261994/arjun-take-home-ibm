@@ -9,12 +9,7 @@ export default class Gallery extends Component {
         super(props)
 
         this.state = {
-            GalleryArr: this.props.data.gallery
         }
-    }
-    componentDidMount() {
-        const { gallery } = this.props.data
-        console.log("image", this.props.data.gallery, gallery)
     }
     render() {
         let { gallery } = this.props.data

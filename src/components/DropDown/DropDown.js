@@ -5,11 +5,10 @@ class DropDown extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            toggleDropDown: false
+
         }
     }
     componentDidMount() {
-        console.log(this.props, "comingggg")
         document.addEventListener('mousedown', this.handleClick, false)
     }
     componentWillUnmount() {
@@ -27,20 +26,8 @@ class DropDown extends Component {
         this.props.handleDropDownClick(name, val)
         this.props.closeDropDown()
     }
-    // handleToggle = () => {
-    //     let { toggleDropDown } = this.state
-    //     this.setState({ toggleDropDown: !toggleDropDown })
-    // }
-    // closeDropDown = () => {
-    //     let { toggleDropDown } = this.state
-    //     if (toggleDropDown) {
-    //         this.setState({ toggleDropDown: false })
-    //     }
-    // toggleDropDown ? (this.setState({ toggleDropDown: false })) : null;
-    // }
     render() {
         let { bodyClass, toggleDropDown } = this.props
-        console.log(this.props)
         return (
             <div className="i-dropdown-container" ref={dropDownRef => this.dropDownRef = dropDownRef}>
                 <div className="i-dropdown-header cursorpointer" onClick={() => this.props.handleToggle()}>
