@@ -42,6 +42,7 @@ class MainHome extends Component {
     componentDidMount() {
         this.getEngData()
         this.getLatinData()
+        document.title = "IBM TV"
     }
     getEngData = () => {
         axios.get('/data/en_US.json')
