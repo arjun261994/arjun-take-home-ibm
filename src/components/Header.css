@@ -1,0 +1,16 @@
+.i-header-main-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    color: white;
+    background-color: rgb(20, 20, 20);
+    padding: 0 1vw;
+}
+.i-Header-container-flex{
+    display: flex;
+}
+.i-Header-container-content-options{
+    border-right: 1.5px solid #cac2c2;
+    padding: 0 1vw;
+}

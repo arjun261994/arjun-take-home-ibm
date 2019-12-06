@@ -1,0 +1,33 @@
+.i-dropdown-container{
+    justify-content: center;
+    flex: 0.1;
+}
+.i-dropdown-header{
+    border: 2px solid white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.i-dropdown-body{
+    position: absolute;
+    background-color: #ecdddd;
+    color: #916a6a;
+    border-radius: 3px;
+    z-index:1;
+    margin-top: 0.2vh;
+}
+.i-dropDown-item{
+    margin: 0.2vw 0;
+}
+.i-dropDown-arrow{
+    width: 0.8vw;
+    padding-left: 0.3vw;
+}
+.i-dropdown-header > span{
+    display: flex;
+}
+.i-dropDown-item:hover{
+    padding-left: 4px;
+    background-color: white;
+}

@@ -1,0 +1,13 @@
+.i-Home-Title-description{
+    position: absolute;
+    bottom: 34%;
+    font-size: 49px;
+    font-weight: bolder;
+    color: white;
+    left: 2%;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 30%;
+}

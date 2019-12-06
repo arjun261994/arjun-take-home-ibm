@@ -1,0 +1,25 @@
+.slick-prev {
+    left: 3% !important;
+    z-index: 1;
+  }
+  .slick-next {
+    right: 3% !important;
+    z-index: 1;
+  }
+  .image-4{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+  .slick-track{
+    display: flex !important;
+    align-items: center;
+  }
+.i-item-div{
+    width: 100%;
+    cursor: pointer;
+}
+.i-gallery-main-container{
+    background-attachment: fixed;
+    color: rgba(255, 255, 255, 255);
+}

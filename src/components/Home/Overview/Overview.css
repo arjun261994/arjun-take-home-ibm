@@ -1,0 +1,24 @@
+.i-flex-container{
+    display: flex;
+    background-color: black;
+    color: white;
+}
+.i-flex-item1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 1vw;
+    flex: 0.5;
+}
+.i-flex-item2{
+    flex: 0.5;
+}
+.i-flex-ov-img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+.i-flex-ov-quote{
+    font-size: 1.2vw;
+    font-weight: 600;
+}

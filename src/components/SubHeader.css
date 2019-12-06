@@ -1,0 +1,29 @@
+.i-subHeader-main-div{
+    font-size: 19px;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 1vh;
+}
+.i-subHeader-container-div{
+    float: right;
+    margin-right: 2vw;
+    font-size: 19px;
+    display: flex;
+    font-weight: 700;
+}
+.i-subHeader-container-content{
+    border-right: 1.5px solid #cac2c2;
+    padding: 0 1vw;
+}
+.fixed-sub-header{
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 1;
+    color: white;
+}
+.active{
+    border: 2px solid white;
+    color: black;   
+    background-color: white;
+}

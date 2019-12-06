@@ -1,0 +1,58 @@
+.i-episodes-main-container{
+    color: white;
+}
+.i-episodes-header-main{
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+    margin: 0 auto;
+    height: 8vh;
+    align-items: center;
+}
+.i-episodes-header-sort{
+    display: flex;
+    font-size: 1.5vw;
+    flex: 0.12;
+}
+.i-EpisodeItem-Container{
+    display: flex;
+    width: 67%;
+    margin: 0.2vw auto;
+    border: 2px solid white;
+    align-items: center;
+}
+.i-EpisodeItem-innerItem-1{
+    flex: 0.5;
+    padding: 0.6vw 0;
+}
+.i-EpisodeItem-innerItem-2{
+    display: flex;
+    flex: 0.5;
+    justify-content: center;
+}
+.i-EpisodeItem-innerItem-2-padding{
+    padding-right: 1vw;
+}
+.i-episodeList-mainContainer{
+    font-size: 1.5vw;
+    font-family: fantasy;
+}
+.i-episodesName-title{
+    font-size: 2vw;
+    font-family: sans-serif;
+}
+.i-episodes-title-season-section{
+    display: flex;
+    align-items: center;
+    flex: 0.4;
+    justify-content: space-around;
+}
+.i-seasons-section{
+    display: flex;
+    flex: 0.4;
+    font-size: 1.3vw;
+    justify-content: space-between;
+}
+.i-EpisodeItem-innerItem-season{
+    font-size: 1vw;
+}
