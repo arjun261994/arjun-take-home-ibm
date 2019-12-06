@@ -47,7 +47,7 @@ class Home extends Component {
                 </div>
 
                 <React.Fragment>
-                    <Overview id="inspiration" data={this.props.data} />
+                    <Overview id="overview" data={this.props.data} />
                     <Gallery id="gallery" data={this.props.data} />
                     <Episodes
                         id="episodes"

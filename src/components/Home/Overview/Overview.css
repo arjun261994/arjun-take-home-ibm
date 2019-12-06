@@ -22,3 +22,15 @@
     font-size: 1.2vw;
     font-weight: 600;
 }
+@media screen and (max-width: 900px){
+    .i-flex-ov-quote{
+        font-size: 2.2vw;
+    }
+    .i-flex-container{
+        flex-direction: column;
+    }
+    .i-flex-ov-img{
+        width: 70%;
+        align-self: center;
+    }
+}

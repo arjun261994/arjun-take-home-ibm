@@ -35,13 +35,13 @@ export default function SubHeader() {
                 <div className="i-subHeader-container-content cursorpointer">
                     <Link
                         activeClass="active"
-                        to="inspiration"
+                        to="overview"
                         spy={true}
                         smooth={true}
                         offset={-70}
                         duration={500}
                     >
-                        Inspiration
+                        Overview
                     </Link>
                 </div>
                 <div className="i-subHeader-container-content cursorpointer">

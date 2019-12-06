@@ -30,7 +30,7 @@ export default class Gallery extends Component {
                         ))
                     }
                 </Slider>
-                <span>-- Slide to view more photos from Stranger Things --</span>
+                <span style={{ fontSize: "1.2vw" }}>-- Slide to view more photos from Stranger Things --</span>
             </div>
         )
     }
